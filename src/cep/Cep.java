@@ -160,14 +160,13 @@ public class Cep extends JFrame {
 	try {
 	    URL url = new URL("http://cep.republicavirtual.com.br/web_cep.php?cep=" + cep + "formato=xml");
 	    SAXReader xml = new SAXReader();
-	    Document document = xml.read(url);
-	    Element root = document.getRootElement();
+	    Document documento = xml.read(url);
+	    Element root = documento.getRootElement();
 	    for (Iterator<Element> it = root.elementIterator(); it.hasNext();) {
 	        Element element = it.next();
 	        if (element.getQualifiedName().equals("cidade")) {
 	            textCidade.setText(element.getText());
-	        }
-	             	
+	        }       	
 	        	
 	        
 	    }
