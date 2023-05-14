@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="./src/img/project.gif" max-width="600">    
+</p>
+
 # BuscarCEP
  Busca automática de CEP em um Web Service
  
